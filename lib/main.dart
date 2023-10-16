@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       routes: {
-        '/splash_screen2': (context) => SplashScreen2(),
+        '/splash_screen2': (context) => const Splashscreen2(),
       },
       theme: ThemeData(
           appBarTheme: const AppBarTheme(

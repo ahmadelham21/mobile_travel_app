@@ -1,4 +1,4 @@
-const String Gunungsvg = '''
+const String gunungsvg = '''
 <svg width="390" height="555" viewBox="0 0 390 555" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_1834_19410)">
 <path d="M57.5947 352.696L-186.744 509.876H310.864L57.5947 352.696Z" fill="url(#paint0_radial_1834_19410)"/>

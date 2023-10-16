@@ -52,7 +52,7 @@ class Splashscreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   SvgPicture.string(
-                    Gunungsvg, // Gantilah dengan path gambar SVG Anda
+                    gunungsvg, // Gantilah dengan path gambar SVG Anda
                   )
                 ],
               ),
@@ -63,7 +63,7 @@ class Splashscreen extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(bottom: 30),
                       child: SvgPicture.string(
-                        Titikpertamasvg,
+                        titikpertamasvg,
                       ),
                     ),
                   ],
@@ -75,19 +75,25 @@ class Splashscreen extends StatelessWidget {
                     height: 300,
                   ),
                   Center(
-                    child: InkWell(
-                      onTap: () {
-                        Navigator.pushNamed(context, '/splash_screen2');
-                      },
-                      child: Container(
-                        width: 72,
-                        height: 72,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(50),
-                            color: Color(0xFFFF5900)),
-                        child: Icon(
-                          Icons.arrow_forward,
-                          color: Colors.white,
+                    child: Card(
+                      color: Color(0xFFFF5900),
+                      elevation: 2, // Elevasi kartu
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(
+                            50.0), // Border radius untuk kartu
+                      ),
+                      child: InkWell(
+                        borderRadius: BorderRadius.circular(50),
+                        onTap: () {
+                          Navigator.pushNamed(context, '/splash_screen2');
+                        },
+                        child: SizedBox(
+                          width: 72,
+                          height: 72,
+                          child: Icon(
+                            Icons.arrow_forward,
+                            color: Colors.white,
+                          ),
                         ),
                       ),
                     ),

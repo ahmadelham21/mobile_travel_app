@@ -1,4 +1,4 @@
-const String Titikpertamasvg =
+const String titikpertamasvg =
     '''<svg width="90" height="24" viewBox="0 0 90 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g opacity="0.4" clip-path="url(#clip0_2713_1866)">
 <circle cx="5" cy="12" r="3.75" fill="white"/>
