@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:mobile_travel_app/screens/splashs/Splash_screen1.dart';
+import 'package:mobile_travel_app/screens/splashs/splash_screen1.dart';
 import 'package:mobile_travel_app/screens/splashs/spash_screen2.dart';
 
 void main() {

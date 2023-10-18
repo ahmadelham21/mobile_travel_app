@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mobile_travel_app/screens/svgs/gambarhijau.dart';
+import 'package:mobile_travel_app/screens/svgs/gambargunung.dart';
 import 'package:mobile_travel_app/screens/svgs/titikpertama.dart';
 
-class Splashscreen2 extends StatelessWidget {
-  const Splashscreen2({super.key});
+class Splashscreen extends StatelessWidget {
+  const Splashscreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class Splashscreen2 extends StatelessWidget {
                   ),
                   Center(
                     child: Text(
-                      'Save and \n Easy',
+                      'Explorer \n The World',
                       maxLines: 2,
                       textAlign: TextAlign.center,
                       style: GoogleFonts.poppins(
@@ -52,7 +52,7 @@ class Splashscreen2 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   SvgPicture.string(
-                    hijausvg, // Gantilah dengan path gambar SVG Anda
+                    gunungsvg, // Gantilah dengan path gambar SVG Anda
                   )
                 ],
               ),
@@ -76,7 +76,7 @@ class Splashscreen2 extends StatelessWidget {
                   ),
                   Center(
                     child: Card(
-                      color: const Color(0xFF24B24C),
+                      color: const Color(0xFFFF5900),
                       elevation: 2, // Elevasi kartu
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(
@@ -84,7 +84,9 @@ class Splashscreen2 extends StatelessWidget {
                       ),
                       child: InkWell(
                         borderRadius: BorderRadius.circular(50),
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.pushNamed(context, '/splash_screen2');
+                        },
                         child: const SizedBox(
                           width: 72,
                           height: 72,
